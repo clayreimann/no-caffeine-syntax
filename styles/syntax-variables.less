@@ -7,37 +7,53 @@
     // -------------------------------------
     //  General colors
     // -------------------------------------
-        @syntax-text-color: @color-white_dark;
-        @syntax-cursor-color: #fff;
-        @syntax-selection-color: @color-charcoal_light;
-        @syntax-selection-flash-color: lighten(@color-charcoal_light, 15%);
-        @syntax-background-color: @color-charcoal;
+    @syntax-text-color: @color-white_dark;
+    @syntax-cursor-color: #fff;
+    @syntax-selection-color: @color-charcoal_light;
+    @syntax-selection-flash-color: lighten(@color-charcoal_light, 15%);
+    @syntax-background-color: @color-charcoal;
 
     // -------------------------------------
     //  Guide colors
     // -------------------------------------
-        @syntax-wrap-guide-color: @color-charcoal_light;
-        @syntax-indent-guide-color: rgba(255, 255, 255, .1);
-        @syntax-invisible-character-color: @color-brown_dark;
+    @syntax-wrap-guide-color: @color-charcoal_light;
+    @syntax-indent-guide-color: rgba(255, 255, 255, .1);
+    @syntax-invisible-character-color: @color-brown_dark;
 
     // -------------------------------------
     //  For find and replace markers
     // -------------------------------------
-        @syntax-result-marker-color: @color-white_dark;
-        @syntax-result-marker-color-selected: #fff;
+    @syntax-result-marker-color: @color-white_dark;
+    @syntax-result-marker-color-selected: @color-blue;
 
     // -------------------------------------
     //  Gutter colors
     // -------------------------------------
-        @syntax-gutter-text-color: @color-grey;
-        @syntax-gutter-text-color-selected: @color-grey;
-        @syntax-gutter-background-color: @color-midnight;
-        @syntax-gutter-background-color-selected: rgba(255, 255, 255, .04);
+    @syntax-gutter-text-color: @color-grey;
+    @syntax-gutter-text-color-selected: @color-grey;
+    @syntax-gutter-background-color: @color-midnight;
+    @syntax-gutter-background-color-selected: rgba(255, 255, 255, .04);
 
     // -------------------------------------
     //  For git diff info. i.e. in the gutter
     // -------------------------------------
-        @syntax-color-renamed:  hsl(208, 100%, 60%);
-        @syntax-color-added:    hsl(150,  60%, 54%);
-        @syntax-color-modified: hsl(40,   60%, 70%);
-        @syntax-color-removed:  hsl(0,    70%, 60%);
+    @syntax-color-renamed:  hsl(208, 100%, 60%);
+    @syntax-color-added:    hsl(150,  60%, 54%);
+    @syntax-color-modified: hsl(40,   60%, 70%);
+    @syntax-color-removed:  hsl(0,    70%, 60%);
+
+    // -------------------------------------
+    // For language entity colors
+    // -------------------------------------
+    @syntax-color-variable: @color-yellow_light;
+    @syntax-color-constant: @color-yellow_light;
+    @syntax-color-property: #DF6A73;
+    @syntax-color-value: #D29B67;
+    @syntax-color-function: #61AEEF;
+    @syntax-color-method: @syntax-color-function;
+    @syntax-color-class: #E5C17C;
+    @syntax-color-keyword: #a431c4;
+    @syntax-color-tag: #b72424;
+    @syntax-color-attribute: #87400d;
+    @syntax-color-import: #97C378;
+    @syntax-color-snippet: #97C378;

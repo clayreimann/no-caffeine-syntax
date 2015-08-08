@@ -1,0 +1,67 @@
+// -------------------------------------
+//  Source code
+// -------------------------------------
+.text, .source {
+    .comment {
+        font-style: italic;
+        color: @color-brown_dark;
+    }
+
+    .meta {
+        &.function .name { color: @color-blue; }
+        &.brace { color: @color-brown_light; }
+    }
+
+    .keyword {
+        // Coffee: eg. new, =, -, +, :, isnt, is
+        &.operator { color: @color-brown; }
+
+        // Coffee: eg. do, if, return, then, switch, for
+        &.control { color: @color-orange_dark; }
+    }
+
+    .variable {
+        &.assignment { color: @color-beige; }
+
+        // Coffee: function parameters
+        &.parameter { color: @color-yellow; }
+
+        // Coffee: @variable
+        &.instance { color: @color-green_sea; }
+    }
+
+    .string {
+        color: @color-green;
+
+        &.regexp { color: @color-orange; }
+
+        // Coffee: #{ variable }
+        .embedded.source { color: @color-green_sea-2; }
+    }
+
+    .storage {
+        // Coffee: ->
+        &.type.function { color: @color-brown; }
+        &.modifier { color: @color-brown; }
+        &.class { color: @color-red_pale; }
+    }
+
+    .entity {
+        &.instance { color: @color-blue_pale; }
+        &.type.object { color: @color-red_pale; }
+    }
+
+    .support {
+        // Coffee: eg. window, document
+        &.class { color: @color-blue_pale; }
+
+        // Coffee: eg. push, indexOf
+        &.function { color: @color-orange; }
+    }
+
+    // Coffee: eg. null, false, true, undefined
+    .constant { color: @color-yellow_light; }
+
+    // Coffee: eg. this
+    .language.variable { color: @color-yellow_light; }
+}
